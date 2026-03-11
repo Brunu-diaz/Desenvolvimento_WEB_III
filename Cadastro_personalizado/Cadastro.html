@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: var(--bg);
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            min-height: 100vh;
+            padding: 40px 0 20px;
+        }
+
+        .page-header {
+            background: var(--primary);
+            color: white;
+            padding: 36px 32px 80px;
+            border-radius: 0 0 40px 40px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-header ::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            top: -100px;
+            left: -100px;
+        }
+
+        .page-header h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            top: -8px;
+            right: -60px;
+        }
+
+        .page-header p {
+            opacity: 0.75;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin: 4px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <div class="container" style="max-width: 780px">
+            <div class="d-flex flex-column align-items-center gap-3 mb-1">
+                <div style="background: rgba(255,255,255,0.244); padding: 12px; border-radius: 10px;">
+    
+    <h1>Cadastro de Usuário</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <fieldset>
+        <legend>Formulário</legend>
+        <form action="" method="post">
+            <label for="nome">Digite seu nome:</label><br>
+            <input type="text" name="" id="nome" placeholder="Nome Completo"></form><br>
+
+            <label for="email">Digite seu e-mail</label><br>
+            <input type="email" name="" id="email" placeholder="exemplo@exemplo.com"></input>
+            <br><br>
+
+            <label for="senha">Cadastre sua senha:</label><br>
+            <input type="password" name="" id="senha" placeholder="Máx. 8 caracteres" maxlength="8" required title="Somente Números"></input><br><br>
+
+            <label for="data">Data de nascimento:</label><br>
+            <input type="date" name="" id="data"></input><br><br>
+
+            <label for="curso">Esolha o curso:</label><br>
+            <select name="" id="curso">
+                <option value="">Cursos</option>
+                    <optgroup label="Tecnologia">
+                        <option value="">Engenharia de Software</option>
+                        <option value="">Ciência da Computação</option>
+                        <option value="">Sistema de Informação</option>
+                    </optgroup>
+                    <optgroup label="Engenharia">
+                        <option value="">Civil</option>
+                        <option value="">Elétrica</option>
+                        <option value="">Mecânica</option>
+                    </optgroup>
+            </select><br><br>
+
+            <input type="checkbox" id="termo"> <label for="termo">Termos de uso</label><br><br>
+
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+            
+        </form>
+    </fieldset>
+</body>
+</html>
