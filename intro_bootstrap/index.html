@@ -27,17 +27,17 @@
         <p class="text-muted small mb-3">class="btn" + "btn-primary" (ou outras variantes de cor) para criar botões estilizados com o Bootstrap. Class base: <code>btn</code> - cor: <code>btn-primary</code> <code>btn-sucess</code> <code>btn-danger</code></p>
         <div class="mb-5">
             <button class="btn btn-primary me-2">Primário</button>
-            <button class="btn btn-sucess me-2">Sucesso</button>
+            <button class="btn btn-success me-2">Sucesso</button>
             <button class="btn btn-danger me-2">Perigo</button>
             <button class="btn btn-outline-primary me-2">Contorno</button>
-            <button class="btn btn-primary sm">Pequeno</button>
+            <button class="btn btn-primary btn-sm">Pequeno</button>
         </div>
     
     <!-- 3ª Parte - Criar um grid usando componentes do Bootstrap. Conceito: linha "row" + colunas "col" = 12 -->
     <h4 class="mb-3">Grid - Sistema de Colunas</h4>
     <p class="text-muted small mb-3">Toda linha tem: <strong>12 colunas</strong>. Você pode dividir a linha em colunas usando as classes, você decide como dividir: <code>col-4</code> + <code>col-4</code> + <code>col-4</code> = 12 colunas</p>
 
-    <!-- Exemplo de grid com 3 colunas iguais-->
+    <!--Exemplo de grid com 3 colunas iguais-->
     <p class="fw-semibold mb-2">Três colunas iguais (4+4+4)</p>
         <div class="row text-center mb-3">
             <div class="col-4">
@@ -50,6 +50,58 @@
                 <div class="p-3 bg-danger text-white rounded">coluna 3</div>
             </div>
         </div>
+    
+    <!--Exemplo de grid com colunas de tamanhos diferentes-->
+    <p class="fw-semibold mb-2">Colunas de Tamanhos Diferentes (8 + 4)</p>
+        <div class="row text-center mb-5">
+            <div class="col-8">
+                <div class="bg-success text-white rounded p-3">col-8 (coneúdo principal)</div>
+            </div>
+            <div class="col-4">
+                <div class="bg-warning rounded p-3">col-4 (sidebar)</div>
+            </div>
+        </div>
+    
+    <!--4ª Parte - Criar Cards. Conceito: Class="card" + "card-body" + "card-title" + "card-text" para criar um card estilizado com o Bootstrap.-->
+    <h4 class="mb-3">Cards</h4>
+    <p class="text-muted small mb-3">Estrutura: <code>card</code> -> <code>card-body</code> -> <code>card-title</code> + <code>card-text</code></p>
+    <div class="row mb-5">
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100 border-danger">
+                <div class="card-header bg-danger text-white">Destaque</div>
+                <div class="card-body">
+                    <h5 class="card-title">Phyton</h5>
+                    <p class="card-text">Linguagem simples e poderosa, ótima para iniciantes.</p>
+                    <a href="#" class="btn btn-danger btn-sm">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100 border-success">
+                <div class="card-header bg-success text-white">Destaque</div>
+                <div class="card-body">
+                    <h5 class="card-title">HTML & CSS</h5>
+                    <p class="card-text">Linguagens fundamentais para estruturação e estilização de páginas web.</p>
+                    <a href="#" class="btn btn-success btn-sm">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100 border-primary">
+                <div class="card-header bg-primary text-white">Destaque</div>
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Componentes prontos para montar layouts responsivos.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--5ª Parte - Alertas (bônus rápido). Conceito: Feedback visual com uma única classe.-->
+    <h4 class="card border-warning mb-4">Alertas Bônus</h4>
+    <div class="alert alert-success">Cadastro realizado com sucesso!</div>
+    <div class="alert alert-danger">Preencha todos os campos antes de continuar.</div>
     </div>
 </body>
 </html>
